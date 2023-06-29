@@ -1,0 +1,88 @@
+.formData{
+    padding: 50px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.mobileOtpHead{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.inputMobileBody{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    align-items: center;
+}
+
+.registerHeadLine {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(225, 230, 239);
+    border-radius: 5px ;
+    color: #233d63;
+}
+.verifyBtn{
+    border: none;
+    padding: 10px 25px;
+    background-color: var(--third);
+    color: white;
+    font-weight: 700;
+}
+.inputPrimary{
+    width: 80%;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(221, 221, 221);
+    border-style: solid;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+}
+.labelReq{
+    color: red;
+}
+.inputBody{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.inputClg6{
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(221, 221, 221);
+    border-style: solid;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+}
+
+.dropDown{
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.dateOfBirthBody{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.submitBtn{
+    padding: 10px 15px;
+    background-color: var(--third);
+    width: 200px;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.submitInput{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+}
+

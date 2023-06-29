@@ -1,0 +1,28 @@
+
+.topRatingHeading{
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+}
+.topRatingPara{
+    text-align: center;
+    color: #6f7074;
+}
+.cardSwiper{
+    margin-top: 50px;
+}
+.bannerOne{
+    margin-top: 50px;
+}
+.starContainer{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.instructorName{
+    text-align: left;
+    margin-top: 10px;
+}

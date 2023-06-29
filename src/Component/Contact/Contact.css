@@ -1,0 +1,14 @@
+.contactContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 160px;
+}
+.locationContainer{
+    text-align: center;
+}
+
+.locationHeading{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0a0a0a;
+}

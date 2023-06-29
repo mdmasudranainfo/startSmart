@@ -1,0 +1,72 @@
+.bannerMainDiv{
+    position: relative;
+    background-image: url(../../assets/logo/banner_bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-fit: cover; */
+}
+
+
+
+.bannerMainContainer{
+    background-image: url(../../assets/logo/banner_bg.jpg);
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.background{
+    position: absolute;
+    background: linear-gradient( rgb(54, 159, 219) 0%, rgb(5, 25, 37) 100%);
+    top: 0;
+    left: 0;
+    opacity: 0.50;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.bannerContainerContent{
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bannerContainerContent h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.bannerContainerContent p{
+    margin: 0 0 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+.getStartedContainer{
+    display: flex;
+    justify-content: center;
+}
+.getStartedBtn{
+   
+    border: 2px solid #ffffff;
+    border-radius: 27px;
+    font-family: 'Nunito', sans-serif;
+    color: var(--background-color-white);
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 10px 50px;
+    background-color: transparent;
+    transition: 0.4s ease-in-out;
+}
+.getStartedBtn:hover{
+   background-color: var(--background-color-white);
+   color: var(--background-color-black);
+}

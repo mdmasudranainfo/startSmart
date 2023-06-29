@@ -1,0 +1,55 @@
+.upComingEventsHeading{
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+}
+.upComingEventsPara{
+    text-align: center;
+    color: #6f7074;
+}
+.cardMainContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px
+}
+.cardOne{
+    background-color: rgb(203, 203, 203);
+    height: auto;
+    background-size: contain;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+.dateAndTime{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 300px;
+}
+.cardOne:hover{
+    background-color: blue;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.locaction{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.eventParagraph{
+    margin-left: 20px !important;
+    color: #fafafa;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px !important;
+    margin-bottom: 50px !important;
+}

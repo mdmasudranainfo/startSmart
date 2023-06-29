@@ -1,0 +1,12 @@
+.topNavBar{
+    padding: 0 70px; 
+    position: relative;
+    z-index: 10000;
+}
+
+.loginRegisterBtn{
+    display: flex;
+}
+.navListItem{
+    cursor: pointer;
+}

@@ -1,0 +1,114 @@
+.footerFourDiv{
+    /* padding: 80px 0; */
+    margin-bottom: 55px;
+}
+
+.footer {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.footerHeader {
+    margin-bottom: 28px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.footerContactTitle {
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.footerLinkTag {
+    color: black;
+    font-size: 13px;
+    transition: 0.3s;
+    line-height: 30px;
+}
+
+.footerLinkTag:hover{
+    margin-left: 10px;
+
+}
+
+.footerMobileAndText {
+    display: flex;
+    align-items: center;
+    background: black;
+    
+    padding: 6px 14px;
+    width: 70%;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.footerMobileAndText:hover{
+    background-color: #0c4c7c;
+    color: white;
+    cursor: pointer;
+}
+.playStore {
+    width: 54px;
+    height: 50px;
+    color: #a3a3a3e3;
+    transition: 0.3s;
+
+}
+
+.footerMobileAndText:hover .playStore{
+    color: white;
+}
+
+.title {
+    font-size: 13px;
+    color: white;
+}
+
+.secondFooter{
+    display: flex;
+    border-top: 1px solid #e5e8ef;
+    background-color: #f9fafc;
+    padding: 25px;
+}
+
+.logoAndIcon {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    justify-items: center;
+  
+}
+.secondFooterImage {
+    width: 125px;
+}
+.secondFooterLogo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.linkTag {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.linkTag li a{
+    text-decoration: none;
+    color: #6f7074;
+    transition: 0.4 ease-in-out;
+}
+.linkTag li a:hover{
+    color: black;
+}
+.footerIcon{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.copyWrite{
+    background-color: #ebeef4;
+    padding: 30px;
+    margin-top: -150px;
+    text-align: center;
+    color: #969696;
+    font-size: 13px;
+}
