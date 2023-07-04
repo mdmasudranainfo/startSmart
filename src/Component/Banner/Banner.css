@@ -11,6 +11,7 @@
   background-image: url(../../assets/logo/banner_bg.jpg);
   position: relative;
   height: 100vh;
+  max-height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -28,6 +29,7 @@
   position: relative;
   z-index: 10;
   height: 100vh;
+  max-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,4 +79,8 @@
 
 .CurveDiv img {
   width: 100%;
+}
+
+.bannar2 {
+  max-height: 50vh;
 }
