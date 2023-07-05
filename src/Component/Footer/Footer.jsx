@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import "./Footer.css";
-import { FaGooglePlay, FaFacebookF } from "react-icons/fa";
-import { FcBusinessman } from "react-icons/fc";
-import logo from "../../assets/logo/harbour-logo.jpg";
+import { Link } from 'react-router-dom'
+import './Footer.css'
+import { FaGooglePlay, FaFacebookF } from 'react-icons/fa'
+import { FcBusinessman } from 'react-icons/fc'
+import logo from '../../assets/logo/harbour-logo.jpg'
 
 const Footer = () => {
   return (
@@ -165,11 +165,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyWrite">
-          <p>Copyright Harbour IT © 2021. All Rights Reserved.</p>
+          <p>
+            Copyright Harbour IT © 2021. All Rights Reserved.{' '}
+            <Link to="/admin">Admin</Link>
+          </p>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

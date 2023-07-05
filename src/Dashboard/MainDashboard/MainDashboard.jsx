@@ -3,6 +3,7 @@ import React from 'react'
 import './MainDashboard.css'
 import { MdKeyboardDoubleArrowLeft } from 'react-icons/md'
 import { Outlet } from 'react-router-dom'
+import { AiOutlineMenu } from 'react-icons/ai'
 
 const MainDashboard = () => {
   return (
@@ -13,6 +14,8 @@ const MainDashboard = () => {
         </div>
         <div className="d-flex gap-3 align-items-center">
           <h4>Md Masud Rana</h4>
+
+          <AiOutlineMenu className="d-block d-lg-none h4" />
 
           <div className="">
             <img

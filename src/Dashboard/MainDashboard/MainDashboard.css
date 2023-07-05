@@ -3,3 +3,22 @@
   height: 50px;
   border-radius: 100%;
 }
+
+/* Add this CSS to your dashboard.css or a separate CSS file */
+.menuContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.menuContent.open {
+  max-height: 200px; /* Adjust the value based on your actual menu content */
+}
+
+.menuItem {
+  color: rgb(151, 150, 150);
+}
+
+.menuItem:hover {
+  color: white !important;
+}

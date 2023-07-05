@@ -8,7 +8,7 @@ const JoinClass = () => {
 
       {/* search */}
       <div className="row">
-        <div className="col">
+        <div className="col-sm-6">
           <p>Course (Click to load...)</p>
           <select className="form-select" aria-label="Default select example">
             <option selected>Open this select menu</option>
@@ -18,7 +18,7 @@ const JoinClass = () => {
           </select>
         </div>
 
-        <div className="col">
+        <div className="col-sm-6">
           <p>Batch (Click to load...)</p>
           <select className="form-select" aria-label="Default select example">
             <option selected>Open this select menu</option>

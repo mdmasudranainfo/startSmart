@@ -5,13 +5,18 @@ import { Link } from 'react-router-dom'
 import '../../Dashboard/dashboard.css'
 
 import { HiComputerDesktop } from 'react-icons/hi2'
-import { AiFillSetting } from 'react-icons/ai'
+import {
+  AiFillSetting,
+  AiOutlineArrowDown,
+  AiOutlineArrowRight,
+} from 'react-icons/ai'
 import { BsDot } from 'react-icons/bs'
 
 const DashboardMenu = () => {
   const [open, setOpen] = useState(false)
+
   return (
-    <div className="px-4 py-2">
+    <div className="px-4 py-2 ">
       <div className="">
         <img className="img-fluid" src={logo} alt="" />
       </div>
@@ -21,7 +26,7 @@ const DashboardMenu = () => {
         <ul>
           <li className="my-1">
             <Link
-              className="text-white d-flex align-items-center gap-2 "
+              className="menuItem d-flex align-items-center gap-2 "
               to="/admin"
             >
               <HiComputerDesktop />
@@ -32,18 +37,20 @@ const DashboardMenu = () => {
           <li className="my-1 menuAnimation">
             <Link
               onClick={() => setOpen(!open)}
-              className="text-white d-flex align-items-center gap-2  "
+              className="menuItem d-flex align-items-center gap-2  "
             >
               <AiFillSetting />
               <span> Class Operation</span>
+
+              {open ? <AiOutlineArrowDown /> : <AiOutlineArrowRight />}
             </Link>
 
             <ul
-              className={` ${open ? 'd-block' : 'd-none'} ms-3 menuAnimation`}
+              className={`menuContent ${open ? 'open' : ''} ms-3 menuAnimation`}
             >
               <li className="my-1">
                 <Link
-                  className="text-white d-flex align-items-center gap-2 "
+                  className="menuItem d-flex align-items-center gap-2 "
                   to="/admin/JoinClass"
                 >
                   <BsDot />
@@ -52,7 +59,7 @@ const DashboardMenu = () => {
               </li>
               <li className="my-1">
                 <Link
-                  className="text-white d-flex align-items-center gap-2 "
+                  className="menuItem d-flex align-items-center gap-2 "
                   to="/admin"
                 >
                   <BsDot />
