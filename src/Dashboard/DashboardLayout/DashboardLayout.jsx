@@ -1,14 +1,27 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useState } from 'react'
 import DashboardMenu from '../DashboardMenu/DashboardMenu'
 import MainDashboard from '../MainDashboard/MainDashboard'
 import { MdKeyboardDoubleArrowLeft } from 'react-icons/md'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { Outlet } from 'react-router-dom'
 
+import './DashboardLayout.css'
+
 const DashboardLayout = () => {
+  const [openMenubar, setOpenMenubar] = useState(true)
   return (
-    <div className="">
+    <div className=" position-relative">
+      {/* absulate menubar start */}
+      <div
+        className={`${
+          openMenubar ? 'd-lg-none d-block ' : 'd-none'
+        }   position-absolute top-0 absulateMenu w-25 bg-dark`}
+      >
+        <DashboardMenu />
+      </div>
+      {/* absulate menubar end */}
+
       <div className="d-flex min-vh-100">
         <div className="bg-dark text-white-50 h-100vh w-25 d-lg-block  d-none dashboardMenu">
           <DashboardMenu />
@@ -17,20 +30,17 @@ const DashboardLayout = () => {
         {/* main dashboard */}
         <div className="w-100 px-3  ">
           <div>
-            <div className="d-flex justify-content-between py-2 position-position-relative">
-              {/* absulate menu start */}
-              <div className=" d-none  position-absolute top-0 ">
-                <DashboardMenu />
-              </div>
-              {/* absulate menuend */}
-
+            <div className="d-flex justify-content-between py-2">
               <div className="">
                 <MdKeyboardDoubleArrowLeft className="h3 pointer" />
               </div>
               <div className="d-flex gap-3 align-items-center">
                 <h4 className="d-none d-lg-block">Md Masud Rana</h4>
 
-                <AiOutlineMenu className="d-block d-lg-none h4" />
+                <AiOutlineMenu
+                  onClick={() => setOpenMenubar(!openMenubar)}
+                  className="d-block d-lg-none h4 pointer"
+                />
 
                 <div className="">
                   <img
