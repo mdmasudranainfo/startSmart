@@ -1,26 +1,22 @@
-import "./Navbar.css";
-import logo from "../../assets/logo/harbour-logo.jpg";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-
+import './Navbar.css'
+import logo from '../../assets/logo/harbour-logo.jpg'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-  const [stickyNav, setStickyNav] = useState(false);
+  const [stickyNav, setStickyNav] = useState(false)
 
-  window.addEventListener("scroll", () => {
+  window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
-      setStickyNav(true);
-
+      setStickyNav(true)
+    } else {
+      setStickyNav(false)
     }
-    else {
-      setStickyNav(false);
-    }
-  });
+  })
   return (
-
     <div className="navbarMainDiv">
       <div className="container">
-        <div className={`MainNav ${stickyNav ? `sticky container ` : ""}`}>
+        <div className={`MainNav ${stickyNav ? `sticky container ` : ''}`}>
           <div className="">
             <nav>
               <div className="navbarBody">
@@ -30,7 +26,7 @@ const Navbar = () => {
                   </a>
 
                   <a href="" className="harbour">
-                    harbour it
+                    it cash
                   </a>
                 </div>
                 <ul className="nav-links">
@@ -53,7 +49,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

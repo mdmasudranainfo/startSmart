@@ -166,7 +166,7 @@ const Footer = () => {
         </div>
         <div className="copyWrite">
           <p>
-            Copyright Harbour IT © 2021. All Rights Reserved.{' '}
+            Copyright it cash © 2021. All Rights Reserved.{' '}
             <Link to="/admin">Admin</Link>
           </p>
         </div>
