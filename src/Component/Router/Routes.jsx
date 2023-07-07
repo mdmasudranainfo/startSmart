@@ -8,6 +8,7 @@ import LoginPage from '../LoginPage/LoginPage'
 import DashboardLayout from '../../Dashboard/DashboardLayout/DashboardLayout'
 import ActiveCourses from '../../Dashboard/ActiveCourses/ActiveCourses'
 import JoinClass from '../../Dashboard/JoinClass/JoinClass'
+import RegisterLayout from '../Register/RegisterLayout'
 
 export const routes = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ export const routes = createBrowserRouter([
   {
     path: '/login',
     element: <LoginPage />,
+  },
+  {
+    path: '/register',
+    element: <RegisterLayout />,
   },
   {
     path: '/admin',

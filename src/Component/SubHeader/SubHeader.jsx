@@ -1,6 +1,6 @@
-import { FaUser, FaCartPlus } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import "./SubHeader.css"
+import { FaUser, FaCartPlus } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+import './SubHeader.css'
 
 const SubHeader = () => {
   return (
@@ -14,27 +14,29 @@ const SubHeader = () => {
             </div>
             <div className="">
               <div className="topNavMainSecondDiv">
-                <Link  >
+                <Link>
                   <FaUser className="navListItem" />
                 </Link>
 
                 <div className="loginRegisterBtn">
-                  <Link to="/login" className="navListItem">Login/</Link>
+                  <Link to="/login" className="navListItem">
+                    Login/
+                  </Link>
 
-                  <Link to="/student" className="navListItem">Register</Link>
+                  <Link to="/register" className="navListItem">
+                    Register
+                  </Link>
                 </div>
-                <Link  >
+                <Link>
                   <FaCartPlus className="navListItem" />
                 </Link>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SubHeader;
+export default SubHeader

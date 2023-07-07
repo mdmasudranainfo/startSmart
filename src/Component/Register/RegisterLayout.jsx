@@ -1,15 +1,17 @@
-import Login from '../Login/Login'
+// import React from 'react';
+
 import Footer from '../Footer/Footer'
 import LoginBanner from '../LoginBannar/LoginBannar'
+import Register from './Register'
 
-const LoginPage = () => {
+const RegisterLayout = () => {
   return (
     <div>
       <LoginBanner />
-      <Login />
+      <Register />
       <Footer />
     </div>
   )
 }
 
-export default LoginPage
+export default RegisterLayout
