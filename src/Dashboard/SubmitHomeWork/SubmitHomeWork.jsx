@@ -1,10 +1,7 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
-
-const JoinClass = () => {
+const SubmitHomeWork = () => {
   return (
     <div>
-      <h1>Join Class</h1>
+      <h1>Homework Submit</h1>
 
       {/* search */}
       <div className="row">
@@ -20,16 +17,15 @@ const JoinClass = () => {
 
         <div className="col-sm-6">
           <p>Batch (Click to load...)</p>
-          <select className="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+          <input className="form-control" placeholder="Submit HomeWork Link" />
+        </div>
+
+        <div className="d-flex justify-content-center  mt-4">
+          <button className="btn btn-primary ">Submit</button>
         </div>
       </div>
     </div>
   )
 }
 
-export default JoinClass
+export default SubmitHomeWork

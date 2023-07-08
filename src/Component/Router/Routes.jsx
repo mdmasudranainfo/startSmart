@@ -9,6 +9,7 @@ import DashboardLayout from '../../Dashboard/DashboardLayout/DashboardLayout'
 import ActiveCourses from '../../Dashboard/ActiveCourses/ActiveCourses'
 import JoinClass from '../../Dashboard/JoinClass/JoinClass'
 import RegisterLayout from '../Register/RegisterLayout'
+import SubmitHomeWork from '../../Dashboard/SubmitHomeWork/SubmitHomeWork'
 
 export const routes = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ export const routes = createBrowserRouter([
       {
         path: '/admin/JoinClass',
         element: <JoinClass />,
+      },
+      {
+        path: '/admin/HomeworkSubmit',
+        element: <SubmitHomeWork />,
       },
     ],
   },

@@ -60,14 +60,14 @@ const DashboardMenu = () => {
               <li className="my-1">
                 <Link
                   className="menuItem d-flex align-items-center gap-2 "
-                  to="/admin"
+                  to="/admin/HomeworkSubmit"
                 >
                   <BsDot />
                   <span> Homework Submit</span>
                 </Link>
               </li>
 
-              <li className="my-1">
+              {/* <li className="my-1">
                 <Link
                   className="text-white d-flex align-items-center gap-2 "
                   to="/admin"
@@ -75,7 +75,7 @@ const DashboardMenu = () => {
                   <BsDot />
                   <span> Exams</span>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </li>
         </ul>
