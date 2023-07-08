@@ -131,7 +131,7 @@ const Footer = () => {
         <div className="secondFooter">
           <div className="logoAndIcon container">
             <div className="secondFooterLogo">
-              <div className="image">
+              <div className="">
                 <img src={logo} className="secondFooterImage" alt="" />
               </div>
               {/* <hr className="line" /> */}

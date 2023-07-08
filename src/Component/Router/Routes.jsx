@@ -10,8 +10,13 @@ import ActiveCourses from '../../Dashboard/ActiveCourses/ActiveCourses'
 import JoinClass from '../../Dashboard/JoinClass/JoinClass'
 import RegisterLayout from '../Register/RegisterLayout'
 import SubmitHomeWork from '../../Dashboard/SubmitHomeWork/SubmitHomeWork'
+import NotFoundPage from '../NotFoundPage/NotFoundPage'
 
 export const routes = createBrowserRouter([
+  {
+    path: '/*',
+    element: <NotFoundPage />,
+  },
   {
     path: '/',
     element: <Main />,
