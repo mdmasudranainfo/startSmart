@@ -1,13 +1,13 @@
 import './TopCourse.css'
-import img from "../../assets/logo/harbour-logo.jpg";
-import { AiOutlineStar } from "react-icons/ai";
-import { FcBusinessman } from "react-icons/fc";
-import { MdMessage } from "react-icons/md";
-import { TbCurrencyTaka } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import img from '../../assets/logo/harbour-logo.jpg'
+import { AiOutlineStar } from 'react-icons/ai'
+import { FcBusinessman } from 'react-icons/fc'
+import { MdMessage } from 'react-icons/md'
+import { TbCurrencyTaka } from 'react-icons/tb'
+import { Link } from 'react-router-dom'
 const TopCourse = () => {
   return (
-    <div className='topCourseMainDiv'>
+    <div className="topCourseMainDiv">
       <div className="container">
         <div className="browsAndTop">
           <h1 className="browse">Browse Our Top Course</h1>
@@ -26,7 +26,7 @@ const TopCourse = () => {
                 </div>
 
                 <div className="previewCourse">
-                  <Link to="" className="previewCourseLink">
+                  <Link to="/Coursedetail" className="previewCourseLink">
                     Preview Course
                   </Link>
                 </div>
@@ -100,7 +100,7 @@ const TopCourse = () => {
                 </div>
 
                 <div className="previewCourse">
-                  <Link to="" className="previewCourseLink">
+                  <Link to="/Coursedetail" className="previewCourseLink">
                     Preview Course
                   </Link>
                 </div>
@@ -175,7 +175,7 @@ const TopCourse = () => {
                 </div>
 
                 <div className="previewCourse">
-                  <Link to="" className="previewCourseLink">
+                  <Link to="/Coursedetail" className="previewCourseLink">
                     Preview Course
                   </Link>
                 </div>
@@ -241,7 +241,6 @@ const TopCourse = () => {
 
           {/* card 4 */}
 
-
           <div className="card">
             <div className="cardImage">
               <img src={img} className="image" alt="" />
@@ -251,7 +250,7 @@ const TopCourse = () => {
                 </div>
 
                 <div className="previewCourse">
-                  <Link to="" className="previewCourseLink">
+                  <Link to="/Coursedetail" className="previewCourseLink">
                     Preview Course
                   </Link>
                 </div>
@@ -314,8 +313,6 @@ const TopCourse = () => {
               </div>
             </div>
           </div>
-
-
 
           {/* card 5 */}
           <div className="card">
@@ -327,7 +324,7 @@ const TopCourse = () => {
                 </div>
 
                 <div className="previewCourse">
-                  <Link to="" className="previewCourseLink">
+                  <Link to="/Coursedetail" className="previewCourseLink">
                     Preview Course
                   </Link>
                 </div>
@@ -391,10 +388,7 @@ const TopCourse = () => {
             </div>
           </div>
 
-
-
           {/* card 6 */}
-
 
           <div className="card">
             <div className="cardImage">
@@ -405,7 +399,7 @@ const TopCourse = () => {
                 </div>
 
                 <div className="previewCourse">
-                  <Link to="" className="previewCourseLink">
+                  <Link to="/Coursedetail" className="previewCourseLink">
                     Preview Course
                   </Link>
                 </div>
@@ -479,7 +473,7 @@ const TopCourse = () => {
                 </div>
 
                 <div className="previewCourse">
-                  <Link to="" className="previewCourseLink">
+                  <Link to="/Coursedetail" className="previewCourseLink">
                     Preview Course
                   </Link>
                 </div>
@@ -544,9 +538,6 @@ const TopCourse = () => {
           </div>
           {/* card 8 */}
 
-
-
-
           <div className="card">
             <div className="cardImage">
               <img src={img} className="image" alt="" />
@@ -556,7 +547,7 @@ const TopCourse = () => {
                 </div>
 
                 <div className="previewCourse">
-                  <Link to="" className="previewCourseLink">
+                  <Link to="/Coursedetail" className="previewCourseLink">
                     Preview Course
                   </Link>
                 </div>
@@ -619,11 +610,10 @@ const TopCourse = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TopCourse;
+export default TopCourse
