@@ -11,6 +11,7 @@ import JoinClass from '../../Dashboard/JoinClass/JoinClass'
 import RegisterLayout from '../Register/RegisterLayout'
 import SubmitHomeWork from '../../Dashboard/SubmitHomeWork/SubmitHomeWork'
 import NotFoundPage from '../NotFoundPage/NotFoundPage'
+import CoursedetailPage from '../Coursedetail/CoursedetailPage'
 
 export const routes = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ export const routes = createBrowserRouter([
   {
     path: '/login',
     element: <LoginPage />,
+  },
+  {
+    path: '/Coursedetail',
+    element: <CoursedetailPage />,
   },
   {
     path: '/register',
